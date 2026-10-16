@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Njakaniaina ANDRIAMALALA — Développeur Web passionné à Madagascar. Spécialisé en React, Python, C# et TypeScript.">
+    <meta name="keywords" content="Njakaniaina ANDRIAMALALA, développeur web, portfolio, Madagascar, React, Python, C#, TypeScript">
+    <meta name="author" content="Njakaniaina ANDRIAMALALA">
+    <meta property="og:title" content="Njakaniaina ANDRIAMALALA — Développeur Web">
+    <meta property="og:description" content="Découvrez mon portfolio de projets web modernes.">
+    <meta property="og:type" content="website">
+    <link rel="me" href="https://github.com/njakaniaina">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <title>Njakaniaina ANDRIAMALALA — Développeur Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barre de progression -->
+    <div class="scroll-progress"></div>
+
+    <!-- ========== NAVIGATION ========== -->
+    <header class="navbar" id="navbar">
+        <nav class="nav-container">
+            <a href="#accueil" class="logo">
+                <span class="logo-mark">NA</span>
+                <span class="logo-text">Njakaniaina<span>.dev</span></span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#formation" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer le thème">
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/>
+                    </svg>
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="badge">
+                <span class="dot"></span>
+                Disponible pour missions
+            </div>
+
+            <h1 class="hero-title">
+                Bonjour, je suis
+                <span class="gradient-text">Njakaniaina ANDRIAMALALA</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                <span class="typewriter" data-text="Développeur Web & Passionné du Digital"></span>
+            </p>
+
+            <p class="hero-description">
+                Je conçois des expériences web modernes, performantes et élégantes.
+                Passionné par le développement et la création d'interfaces,
+                je transforme vos idées en produits digitaux mémorables.
+            </p>
+
+            <div class="hero-cta">
+                <a href="#projets" class="btn btn-primary">
+                    Voir mes projets
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"/>
+                        <polyline points="12 5 19 12 12 19"/>
+                    </svg>
+                </a>
+                <a href="tel:+261385678657" class="btn btn-ghost">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    038 56 786 57
+                </a>
+            </div>
+
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>2+</h3>
+                    <p>Années d'étude</p>
+                </div>
+                <div class="stat">
+                    <h3>2</h3>
+                    <p>Projets réalisés</p>
+                </div>
+                <div class="stat">
+                    <h3>6+</h3>
+                    <p>Technologies</p>
+                </div>
+                <div class="stat">
+                    <h3>100%</h3>
+                    <p>Motivation</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section id="apropos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01 — À propos</span>
+                <h2 class="section-title">Qui suis-je<span class="accent">?</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/photo.jpg" alt="Photo de Njakaniaina ANDRIAMALALA" onerror="this.src='https://ui-avatars.com/api/?name=NA&size=400&background=6366f1&color=fff&bold=true&font-size=0.4'">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <h3>Développeur Web basé à Ankadimbahoaka, Madagascar 🇲🇬</h3>
+                    <p>
+                        Je m'appelle <strong>Njakaniaina ANDRIAMALALA</strong>, étudiant en
+                        <strong>Licence 3 Informatique</strong> à l'ISPM Antsobolo et développeur
+                        web passionné par la création d'interfaces modernes et d'expériences
+                        utilisateur mémorables.
+                    </p>
+                    <p>
+                        Mon approche combine <strong>design minimaliste</strong>,
+                        <strong>code propre</strong> et attention aux détails. Chaque projet
+                        est une opportunité d'apprendre et de livrer un travail de qualité.
+                    </p>
+
+                    <ul class="about-list">
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Développement front-end (HTML, CSS, React)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Programmation (Python, C#, TypeScript)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Gestion de bases de données (MySQL, MongoDB)
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            Travail en équipe et gestion de projet
+                        </li>
+                    </ul>
+
+                    <a href="cv.pdf" class="btn btn-primary" download>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                            <polyline points="7 10 12 15 17 10"/>
+                            <line x1="12" y1="15" x2="12" y2="3"/>
+                        </svg>
+                        Télécharger mon CV
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section id="competences" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02 — Compétences</span>
+                <h2 class="section-title">Technologies & Outils</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Responsive</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5"/>
+                            <line x1="12" y1="19" x2="20" y2="19"/>
+                        </svg>
+                    </div>
+                    <h3>Langages</h3>
+                    <div class="skill-tags">
+                        <span>JavaScript</span>
+                        <span>TypeScript</span>
+                        <span>Python</span>
+                        <span>C#</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>Bases de données</h3>
+                    <div class="skill-tags">
+                        <span>MySQL</span>
+                        <span>PostgreSQL</span>
+                        <span>MongoDB</span>
+                        <span>SQLite</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Outils</h3>
+                    <div class="skill-tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Figma</span>
+                        <span>npm</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barres de niveau -->
+            <div class="skill-bars">
+                <h3 class="skill-bars-title">Niveau technique</h3>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>HTML / CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="90"></div></div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>React</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="75"></div></div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>TypeScript</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>Python</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>C#</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="65"></div></div>
+                </div>
+
+                <div class="skill-bar-item">
+                    <div class="skill-bar-header">
+                        <span>Bases de données</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="progress-bar"><div class="progress-fill" data-width="70"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== LANGUES ========== -->
+    <section id="langues" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03 — Langues</span>
+                <h2 class="section-title">Langues parlées</h2>
+            </div>
+
+            <div class="languages-grid">
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇲🇬</span>
+                        <h3>Malagasy</h3>
+                    </div>
+                    <p class="language-level">Langue maternelle</p>
+                    <div class="progress-bar"><div class="progress-fill" data-width="100"></div></div>
+                </div>
+
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇫🇷</span>
+                        <h3>Français</h3>
+                    </div>
+                    <p class="language-level">Niveau intermédiaire</p>
+                    <div class="progress-bar"><div class="progress-fill" data-width="60"></div></div>
+                </div>
+
+                <div class="language-card">
+                    <div class="language-header">
+                        <span class="flag">🇬🇧</span>
+                        <h3>Anglais</h3>
+                    </div>
+                    <p class="language-level">Niveau de base</p>
+                    <div class="progress-bar"><div class="progress-fill" data-width="30"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section id="projets" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">04 — Portfolio</span>
+                <h2 class="section-title">Projets réalisés</h2>
+                <p class="section-subtitle">Découvrez les projets sur lesquels j'ai travaillé</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- SMART TASKER -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/smart-tasker.jpg" alt="Smart Tasker" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-placeholder\'>📋</div>';">
+                        <div class="project-overlay">
+                            <a href="https://github.com/njakaniaina/smart-tasker" target="_blank" class="project-link" aria-label="Voir le code">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.76.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.3.47-2.38 1.24-3.22-.13-.3-.54-1.52.1-3.18 0 0 1.02-.32 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.24 3.34-1.24.64 1.66.24 2.88.12 3.18.78.84 1.24 1.92 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">Application Web</span>
+                            <span class="project-badge">Projet en groupe</span>
+                        </div>
+                        <h3>Smart Tasker</h3>
+                        <p class="project-description">
+                            Application web de gestion de tâches et d'organisation permettant
+                            de planifier, suivre et organiser efficacement son travail.
+                        </p>
+
+                        <ul class="project-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Développement d'une application web de gestion de tâches
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Conception de l'interface utilisateur et fonctionnalités
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Système de gestion et de suivi des tâches
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- SERVICE LOCALE -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/service-locale.jpg" alt="Service Locale" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'project-placeholder\'>🏘️</div>';">
+                        <div class="project-overlay">
+                            <a href="https://github.com/njakaniaina/service-locale" target="_blank" class="project-link" aria-label="Voir le code">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.76.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.3.47-2.38 1.24-3.22-.13-.3-.54-1.52.1-3.18 0 0 1.02-.32 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.24 3.34-1.24.64 1.66.24 2.88.12 3.18.78.84 1.24 1.92 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <span class="project-category">Application Web</span>
+                            <span class="project-badge">Projet en équipe</span>
+                        </div>
+                        <h3>Service Locale</h3>
+                        <p class="project-description">
+                            Plateforme web mettant en relation les prestataires de services
+                            locaux avec les clients pour simplifier la gestion des demandes.
+                        </p>
+
+                        <ul class="project-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Développement d'une application web de services locaux
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Conception de l'interface et fonctionnalités principales
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                                Gestion des demandes de service via la plateforme
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FORMATION ========== -->
+    <section id="formation" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">05 — Parcours</span>
+                <h2 class="section-title">Formation & Certifications</h2>
+                <p class="section-subtitle">Mon parcours académique</p>
+            </div>
+
+            <div class="timeline">
+                <!-- LICENCE 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2023 — 2026</span>
+                            <span class="timeline-status">En cours</span>
+                        </div>
+                        <h3>Licence 3 en Informatique</h3>
+                        <p class="timeline-institution">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                            </svg>
+                            ISPM Antsobolo
+                        </p>
+                        <p class="timeline-description">
+                            Formation universitaire en informatique couvrant le développement
+                            web, la programmation, les bases de données et les systèmes d'information.
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Développement Web</span>
+                            <span>Programmation</span>
+                            <span>Bases de données</span>
+                            <span>Algorithmique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BACCALAURÉAT -->
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2022</span>
+                            <span class="timeline-status success">Obtenu</span>
+                        </div>
+                        <h3>Baccalauréat Série D</h3>
+                        <p class="timeline-institution">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4"/>
+                            </svg>
+                            Lycée Manambina III
+                        </p>
+                        <p class="timeline-description">
+                            Diplôme du baccalauréat scientifique, série D (Mathématiques
+                            et Sciences de la Vie et de la Terre).
+                        </p>
+                        <div class="timeline-skills">
+                            <span>Mathématiques</span>
+                            <span>Sciences</span>
+                            <span>Physique</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">06 — Contact</span>
+                <h2 class="section-title">Travaillons ensemble</h2>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Discutons de votre projet</h3>
+                    <p>Vous avez un projet en tête ? N'hésitez pas à me contacter, je serai ravi de discuter de vos idées.</p>
+
+                    <div class="contact-items">
+                        <!-- EMAIL -->
+                        <a href="mailto:njakaniaina000333@gmail.com" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Email</span>
+                                <strong>njakaniaina000333@gmail.com</strong>
+                            </div>
+                        </a>
+
+                        <!-- TÉLÉPHONE -->
+                        <a href="tel:+261385678657" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Téléphone</span>
+                                <strong>038 56 786 57</strong>
+                            </div>
+                        </a>
+
+                        <!-- GITHUB -->
+                        <a href="https://github.com/njakaniaina" target="_blank" class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.76.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.3.47-2.38 1.24-3.22-.13-.3-.54-1.52.1-3.18 0 0 1.02-.32 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.24 3.34-1.24.64 1.66.24 2.88.12 3.18.78.84 1.24 1.92 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>GitHub</span>
+                                <strong>github.com/njakaniaina</strong>
+                            </div>
+                        </a>
+
+                        <!-- ADRESSE -->
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Adresse</span>
+                                <strong>Ankadimbahoaka, Madagascar</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/njakaniaina" target="_blank" aria-label="GitHub" title="GitHub">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.4.6.1.82-.26.82-.58v-2c-3.34.72-4.04-1.6-4.04-1.6-.55-1.4-1.34-1.76-1.34-1.76-1.1-.76.08-.74.08-.74 1.2.08 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.46-1.34-5.46-5.94 0-1.3.47-2.38 1.24-3.22-.13-.3-.54-1.52.1-3.18 0 0 1.02-.32 3.34 1.24a11.6 11.6 0 0 1 6.08 0c2.32-1.56 3.34-1.24 3.34-1.24.64 1.66.24 2.88.12 3.18.78.84 1.24 1.92 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.44.38.82 1.12.82 2.26v3.36c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:njakaniaina000333@gmail.com" aria-label="Email" title="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/261385678657" target="_blank" aria-label="WhatsApp" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="vous@exemple.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        Envoyer le message
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"/>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-mark">NA</span>
+                    <p>Concevoir avec passion, coder avec précision.</p>
+                </div>
+
+                <ul class="footer-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#competences">Compétences</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#formation">Formation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Njakaniaina ANDRIAMALALA. Tous droits réservés.</p>
+                <p>Fait avec ❤️ à Madagascar 🇲🇬</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton retour en haut -->
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"/>
+            <polyline points="5 12 12 5 19 12"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
